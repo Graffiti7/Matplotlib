@@ -12,10 +12,12 @@ y_beijing = [random.uniform(15,18) for i in x]
 
 y_shanghai = [random.uniform(25,28) for i in x]
 
-plt.plot(x,y_beijing,color = "r",linestyle = "--")
+plt.plot(x,y_beijing,color = "r",linestyle = "--",label="北京")
 
-plt.plot(x,y_shanghai)
+plt.plot(x,y_shanghai,color = "b",linestyle = "-",label="上海")
 
+#显示图例
+plt.legend()
 #修改x y轴刻度
 x_label = ["11时{}分".format(i) for i in x]
 
