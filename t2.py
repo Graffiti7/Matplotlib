@@ -5,7 +5,7 @@ import matplotlib as mpl
 mpl.rcParams['font.sans-serif'] = ['SimHei']
 
 plt.figure(figsize=(20,8),dpi=80)
-
+figure,axes = plt.subplots(nrows=1,ncols=2,figsize=(20,8),dpi = 80)
 x = range(60)
 
 y_beijing = [random.uniform(15,18) for i in x]
