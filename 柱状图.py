@@ -10,7 +10,7 @@ plt.figure(figsize=(20,8),dpi=80)
 
 x_ticks = range(len(movie_name))
 
-plt.bar(x_ticks,y,color = ["r","b","y"])
+plt.bar(x_ticks,y,color = ["r","b","y"],width=0.2)
 
 plt.xticks(x_ticks,movie_name)
 
